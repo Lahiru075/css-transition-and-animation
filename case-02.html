@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        body {
+          background-color: #4a0de3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+        }
+
+        body > div {
+          width: 300px;
+          height: 300px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        body>div::before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          background-color: gray;
+          border: 15px solid white;
+          border-top: 15px solid red;
+          border-radius: 100%;
+          transition: transform 1s linear;
+          z-index: -1;
+        }
+
+        body>div:hover::before {
+          transform: rotate(360deg);
+        }
+
+        p {
+          color: white;
+          font-family: monospace;
+          font-weight: bold;
+          font-size: 2rem;
+          margin: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<div>
+  <p>RWAD</p>
+</div>
+
+</body>
+</html>
