@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="assests/normalize.css">
+
+    <style>
+
+        body {
+            overflow: hidden;
+        }
+
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        div {
+            width: 500vw;
+            height: 100vh;
+            display: flex;
+            transform: translateX(-400vw);
+            animation-name: example;
+            animation-timing-function: linear;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        img {
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        @keyframes example {
+            0% {
+                transform: translateX(-400vw);
+            }
+            20% {
+                transform: translateX(-400vw);
+            }
+            40% {
+                transform: translateX(-300vw);
+            }
+            60% {
+                transform: translateX(-200vw);
+            }
+            80% {
+                transform: translateX(-100vw);
+            }
+            100% {
+                transform: translateX(0vw);
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+<div>
+    <img src="assests/images/pexels-eberhardgross-1004665.jpg">
+    <img src="assests/images/pexels-pixabay-35857.jpg">
+    <img src="assests/images/pexels-pixabay-531879.jpg">
+    <img src="assests/images/pexels-pok-rie-33563-2049422.jpg">
+    <img src="assests/images/pexels-quang-nguyen-vinh-222549-2166711.jpg">
+</div>
+
+</body>
+</html>
